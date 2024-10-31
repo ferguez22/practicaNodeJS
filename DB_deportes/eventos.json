@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "nombre": "Caballos Cup",
+    "descripcion": "Carrera a caballo.",
+    "fecha": "2023-10-11",
+    "ubicacion": "Ponferrada",
+    "tipoDeporte": "Running",
+    "organizador": "organizador1"
+  },
+  {
+    "id": 2,
+    "nombre": "Maratón Urbano",
+    "descripcion": "Carrera a campo abierto.",
+    "fecha": "2023-11-12",
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "Running",
+    "organizador": "organizador2"
+  },
+  {
+    "id": 3,
+    "nombre": "Carrera del Sol",
+    "descripcion": "Competencia bajo el sol.",
+    "fecha": "2024-03-20",
+    "ubicacion": "Madrid",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador3"
+  },
+  {
+    "id": 4,
+    "nombre": "Torneo Invierno",
+    "descripcion": "Partido final del torneo.",
+    "fecha": "2023-12-05",
+    "ubicacion": "Sevilla",
+    "tipoDeporte": "Fútbol",
+    "organizador": "organizador4"
+  },
+  {
+    "id": 5,
+    "nombre": "Festival Deportivo",
+    "descripcion": "Celebración de múltiples deportes.",
+    "fecha": "2024-06-14",
+    "ubicacion": "Bilbao",
+    "tipoDeporte": "CrossFit",
+    "organizador": "organizador5"
+  },
+  {
+    "id": 6,
+    "nombre": "Reto Montaña",
+    "descripcion": "Carrera en terreno elevado.",
+    "fecha": "2023-10-22",
+    "ubicacion": "Granada",
+    "tipoDeporte": "Senderismo",
+    "organizador": "organizador6"
+  },
+  {
+    "id": 7,
+    "nombre": "Maratón Ciudadano",
+    "descripcion": "Evento deportivo comunitario.",
+    "fecha": "2024-02-01",
+    "ubicacion": "Valencia",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador7"
+  },
+  {
+    "id": 8,
+    "nombre": "Torneo Relámpago",
+    "descripcion": "Competición rápida de un día.",
+    "fecha": "2024-08-19",
+    "ubicacion": "Zaragoza",
+    "tipoDeporte": "Baloncesto",
+    "organizador": "organizador8"
+  },
+  {
+    "id": 9,
+    "nombre": "Carrera Extrema",
+    "descripcion": "Prueba extrema de resistencia.",
+    "fecha": "2023-09-30",
+    "ubicacion": "Málaga",
+    "tipoDeporte": "Triatlón",
+    "organizador": "organizador9"
+  },
+  {
+    "id": 10,
+    "nombre": "Festival de Verano",
+    "descripcion": "Evento para deportistas jóvenes.",
+    "fecha": "2024-07-10",
+    "ubicacion": "Córdoba",
+    "tipoDeporte": "Tenis",
+    "organizador": "organizador10"
+  },
+  {
+    "id": 11,
+    "nombre": "Maratón del Centro",
+    "descripcion": "Carrera por la ciudad central.",
+    "fecha": "2024-04-05",
+    "ubicacion": "Salamanca",
+    "tipoDeporte": "Running",
+    "organizador": "organizador11"
+  },
+  {
+    "id": 12,
+    "nombre": "Carrera Nocturna",
+    "descripcion": "Competición nocturna en el centro.",
+    "fecha": "2023-12-11",
+    "ubicacion": "Madrid",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador12"
+  },
+  {
+    "id": 13,
+    "nombre": "Torneo Primavera",
+    "descripcion": "Competencia estacional.",
+    "fecha": "2024-05-18",
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "Fútbol",
+    "organizador": "organizador13"
+  },
+  {
+    "id": 14,
+    "nombre": "Reto Urbano",
+    "descripcion": "Prueba física por las calles.",
+    "fecha": "2023-11-30",
+    "ubicacion": "Sevilla",
+    "tipoDeporte": "Ciclismo",
+    "organizador": "organizador14"
+  },
+  {
+    "id": 15,
+    "nombre": "Carrera a Campo",
+    "descripcion": "Evento en el campo.",
+    "fecha": "2024-03-10",
+    "ubicacion": "Bilbao",
+    "tipoDeporte": "Running",
+    "organizador": "organizador15"
+  },
+  {
+    "id": 16,
+    "nombre": "Torneo Juvenil",
+    "descripcion": "Competición para los más jóvenes.",
+    "fecha": "2024-08-22",
+    "ubicacion": "Granada",
+    "tipoDeporte": "Baloncesto",
+    "organizador": "organizador16"
+  },
+  {
+    "id": 17,
+    "nombre": "Maratón Costa",
+    "descripcion": "Carrera en la costa.",
+    "fecha": "2023-09-18",
+    "ubicacion": "Zaragoza",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador17"
+  },
+  {
+    "id": 18,
+    "nombre": "Carrera del Norte",
+    "descripcion": "Evento en la zona norte del país.",
+    "fecha": "2024-04-12",
+    "ubicacion": "Málaga",
+    "tipoDeporte": "Triatlón",
+    "organizador": "organizador18"
+  },
+  {
+    "id": 19,
+    "nombre": "Reto de Verano",
+    "descripcion": "Competición veraniega.",
+    "fecha": "2024-07-22",
+    "ubicacion": "Córdoba",
+    "tipoDeporte": "Natación",
+    "organizador": "organizador19"
+  },
+  {
+    "id": 20,
+    "nombre": "Maratón de Primavera",
+    "descripcion": "Carrera de 10km por la ciudad.",
+    "fecha": "2023-09-15",
+    "ubicacion": "Madrid",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador20"
+  },
+  {
+    "id": 21,
+    "nombre": "Torneo Ciudadano",
+    "descripcion": "Competición en la ciudad.",
+    "fecha": "2023-11-14",
+    "ubicacion": "Valencia",
+    "tipoDeporte": "Fútbol",
+    "organizador": "organizador21"
+  },
+  {
+    "id": 22,
+    "nombre": "Carrera del Bosque",
+    "descripcion": "Competición en un parque forestal.",
+    "fecha": "2024-03-25",
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "Running",
+    "organizador": "organizador22"
+  },
+  {
+    "id": 23,
+    "nombre": "Maratón Montaña",
+    "descripcion": "Carrera de altura.",
+    "fecha": "2023-12-02",
+    "ubicacion": "Sevilla",
+    "tipoDeporte": "Senderismo",
+    "organizador": "organizador23"
+  },
+  {
+    "id": 24,
+    "nombre": "Reto de Otoño",
+    "descripcion": "Competencia de resistencia física.",
+    "fecha": "2024-10-01",
+    "ubicacion": "Bilbao",
+    "tipoDeporte": "CrossFit",
+    "organizador": "organizador24"
+  },
+  {
+    "id": 25,
+    "nombre": "Festival Deportivo de Otoño",
+    "descripcion": "Festival de deportes en otoño.",
+    "fecha": "2024-06-18",
+    "ubicacion": "Granada",
+    "tipoDeporte": "Ciclismo",
+    "organizador": "organizador25"
+  },
+  {
+    "id": 26,
+    "nombre": "Carrera de Invierno",
+    "descripcion": "Evento de carrera en temporada fría.",
+    "fecha": "2023-12-20",
+    "ubicacion": "Zaragoza",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador26"
+  },
+  {
+    "id": 27,
+    "nombre": "Torneo Estrella",
+    "descripcion": "Competición de grandes talentos.",
+    "fecha": "2024-04-22",
+    "ubicacion": "Málaga",
+    "tipoDeporte": "Baloncesto",
+    "organizador": "organizador27"
+  },
+  {
+    "id": 28,
+    "nombre": "Reto de la Costa",
+    "descripcion": "Prueba física en la costa.",
+    "fecha": "2024-07-28",
+    "ubicacion": "Córdoba",
+    "tipoDeporte": "Triatlón",
+    "organizador": "organizador28"
+  },
+  {
+    "id": 29,
+    "nombre": "Maratón del Desierto",
+    "descripcion": "Carrera en condiciones áridas.",
+    "fecha": "2023-10-20",
+    "ubicacion": "Salamanca",
+    "tipoDeporte": "Running",
+    "organizador": "organizador29"
+  },
+  {
+    "id": 30,
+    "nombre": "Carrera Verde",
+    "descripcion": "Evento en un parque ecológico.",
+    "fecha": "2024-05-02",
+    "ubicacion": "Madrid",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador30"
+  },
+  {
+    "id": 31,
+    "nombre": "Festival del Deporte",
+    "descripcion": "Festival con actividades deportivas.",
+    "fecha": "2024-08-12",
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "CrossFit",
+    "organizador": "organizador31"
+  },
+  {
+    "id": 32,
+    "nombre": "Torneo de la Amistad",
+    "descripcion": "Competición en equipos amistosos.",
+    "fecha": "2023-11-22",
+    "ubicacion": "Sevilla",
+    "tipoDeporte": "Fútbol",
+    "organizador": "organizador32"
+  },
+  {
+    "id": 33,
+    "nombre": "Carrera de la Sierra",
+    "descripcion": "Carrera de montaña.",
+    "fecha": "2024-03-30",
+    "ubicacion": "Bilbao",
+    "tipoDeporte": "Senderismo",
+    "organizador": "organizador33"
+  },
+  {
+    "id": 34,
+    "nombre": "Reto Extremo",
+    "descripcion": "Competición de resistencia extrema.",
+    "fecha": "2024-09-05",
+    "ubicacion": "Granada",
+    "tipoDeporte": "Running",
+    "organizador": "organizador34"
+  },
+  {
+    "id": 35,
+    "nombre": "Maratón Metropolitano",
+    "descripcion": "Carrera por las avenidas principales.",
+    "fecha": "2023-09-28",
+    "ubicacion": "Zaragoza",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador35"
+  },
+  {
+    "id": 36,
+    "nombre": "Carrera Popular",
+    "descripcion": "Competición accesible para todos.",
+    "fecha": "2024-04-07",
+    "ubicacion": "Málaga",
+    "tipoDeporte": "Ciclismo",
+    "organizador": "organizador36"
+  },
+  {
+    "id": 37,
+    "nombre": "Torneo Relámpago Verano",
+    "descripcion": "Competición rápida de verano.",
+    "fecha": "2024-06-15",
+    "ubicacion": "Córdoba",
+    "tipoDeporte": "Baloncesto",
+    "organizador": "organizador37"
+  },
+  {
+    "id": 38,
+    "nombre": "Reto de la Ciudad",
+    "descripcion": "Competición en zona urbana.",
+    "fecha": "2024-07-20",
+    "ubicacion": "Salamanca",
+    "tipoDeporte": "Natación",
+    "organizador": "organizador38"
+  },
+  {
+    "id": 39,
+    "nombre": "Carrera del Sur",
+    "descripcion": "Evento en el sur del país.",
+    "fecha": "2024-09-12",
+    "ubicacion": "Madrid",
+    "tipoDeporte": "Triatlón",
+    "organizador": "organizador39"
+  },
+  {
+    "id": 40,
+    "nombre": "Torneo Internacional",
+    "descripcion": "Competición con equipos internacionales.",
+    "fecha": "2023-12-18",
+    "ubicacion": "Valencia",
+    "tipoDeporte": "Fútbol",
+    "organizador": "organizador40"
+  },
+  {
+    "id": 41,
+    "nombre": "Maratón de la Costa",
+    "descripcion": "Carrera a lo largo de la costa.",
+    "fecha": "2024-05-10",
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "Running",
+    "organizador": "organizador41"
+  },
+  {
+    "id": 42,
+    "nombre": "Carrera Universitaria",
+    "descripcion": "Competencia entre estudiantes.",
+    "fecha": "2023-11-29",
+    "ubicacion": "Sevilla",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador42"
+  },
+  {
+    "id": 43,
+    "nombre": "Reto Solidario",
+    "descripcion": "Carrera benéfica por la ciudad.",
+    "fecha": "2024-08-03",
+    "ubicacion": "Bilbao",
+    "tipoDeporte": "Ciclismo",
+    "organizador": "organizador43"
+  },
+  {
+    "id": 44,
+    "nombre": "Festival Primavera",
+    "descripcion": "Evento deportivo en primavera.",
+    "fecha": "2023-10-25",
+    "ubicacion": "Granada",
+    "tipoDeporte": "CrossFit",
+    "organizador": "organizador44"
+  },
+  {
+    "id": 45,
+    "nombre": "Torneo de Otoño",
+    "descripcion": "Competición de fútbol en otoño.",
+    "fecha": "2023-11-03",
+    "ubicacion": "Zaragoza",
+    "tipoDeporte": "Fútbol",
+    "organizador": "organizador45"
+  },
+  {
+    "id": 46,
+    "nombre": "Reto de las Aguas",
+    "descripcion": "Prueba de resistencia en el agua.",
+    "fecha": "2024-04-27",
+    "ubicacion": "Málaga",
+    "tipoDeporte": "Natación",
+    "organizador": "organizador46"
+  },
+  {
+    "id": 47,
+    "nombre": "Carrera Estival",
+    "descripcion": "Evento deportivo veraniego.",
+    "fecha": "2024-07-25",
+    "ubicacion": "Córdoba",
+    "tipoDeporte": "Running",
+    "organizador": "organizador47"
+  },
+  {
+    "id": 48,
+    "nombre": "Torneo Internacional de Invierno",
+    "descripcion": "Competición internacional de invierno.",
+    "fecha": "2023-12-25",
+    "ubicacion": "Salamanca",
+    "tipoDeporte": "Baloncesto",
+    "organizador": "organizador48"
+  },
+  {
+    "id": 49,
+    "nombre": "Carrera Rápida",
+    "descripcion": "Competición de velocidad.",
+    "fecha": "2024-02-22",
+    "ubicacion": "Madrid",
+    "tipoDeporte": "Atletismo",
+    "organizador": "organizador49"
+  },
+  {
+    "id": 50,
+    "nombre": "Maratón de las Montañas",
+    "descripcion": "Carrera en terreno montañoso.",
+    "fecha": "2024-05-16",
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "Running",
+    "organizador": "organizador50"
+  }
+]

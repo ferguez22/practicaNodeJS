@@ -1,0 +1,79 @@
+@Host = http://localhost:3000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyNCwiaWF0IjoxNzMwNDAzNjIzfQ.K4x0hc_y5F3Vk8FT_FJsjtFUZxAwa9iYAesko4fGuZg
+
+
+///////////////////// USERS //////////////////////
+
+// Get all users
+###
+GET {{Host}}/api/users/
+
+// Get User By ID
+###
+GET {{Host}}/api/users/4
+
+// Register user
+###
+POST {{Host}}/api/users/register
+content-type: application/json
+
+{
+    "username": "cfg",
+    "password": "cfg"
+}
+
+// Login user
+###
+POST {{Host}}/api/users/login
+content-type: application/json
+
+{
+    "username": "cfg",
+    "password": "cfg"
+}
+
+### Perfil
+GET {{Host}}/api/users/perfil
+Authorization: {{token}}
+
+
+///////////////////// EVENTS //////////////////////
+
+// Get all events
+###
+GET {{Host}}/api/events/
+
+// Get event by id
+###
+GET {{Host}}/api/events/34
+
+// Post event
+###
+POST {{Host}}/api/events/   
+Authorization: {{token}}
+content-type: application/json
+
+{
+    "nombre": "Partido de Fútbol",
+    "descripcion": "Partido amistoso de fútbol 7",
+    "fecha": "2024-03-15", 
+    "ubicacion": "Barcelona",
+    "tipoDeporte": "Fútbol",
+    "organizador": "Organizador123"
+}
+
+// Update event
+###
+PUT {{Host}}/api/events/52
+Authorization: {{token}}    
+content-type: application/json
+
+{
+    "nombre": "Sasdasd",
+    "descripcion": "Tornasdads nivel",
+}
+
+// Delete event
+###
+DELETE {{Host}}/api/events/3
+Authorization: {{token}}    
