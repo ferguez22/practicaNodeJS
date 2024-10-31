@@ -1,5 +1,5 @@
 
-2. **Rutas**:
+ **Rutas**:
 
    - **Autenticación**:
      - `POST /api/users/register`: Registro de nuevos usuarios con bcrypt para encriptar la contraseña.
@@ -20,8 +20,6 @@
 
 
 
-
-
 ## Autenticación con JWT
 
 1. **Registro (`POST /api/users/register`)**:
@@ -39,9 +37,6 @@
    - El token debe ser enviado en el encabezado de autorización (`Authorization: Bearer <token>`).
 
 
-
-
-
 ## Validaciones y Manejo de Errores
 
 1. Validar que los campos obligatorios en las rutas estén presentes.
@@ -51,20 +46,6 @@
    - **400**: Datos inválidos.
    - **401**: Acceso no autorizado (falta de token JWT).
    - **403**: Token inválido.
-
-
-
-
-
-## Pruebas y Revisión
-
-1. Probar todas las rutas usando herramientas como **Postman** o **Insomnia**.
-2. Asegurarse de que las validaciones y manejo de errores funcionen correctamente.
-3. Revisar que las rutas protegidas solo sean accesibles mediante un token JWT válido.
-
-
-
-
 
 
 
