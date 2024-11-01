@@ -1,9 +1,7 @@
 @Host = http://localhost:3000
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyNCwiaWF0IjoxNzMwNDAzNjIzfQ.K4x0hc_y5F3Vk8FT_FJsjtFUZxAwa9iYAesko4fGuZg
-
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyOSwiaWF0IjoxNzMwNDYzNTE3fQ.wyXOG1qxI7fe0xUpEcbIThGvrdiam9Q2Z9jK4O3_ZCY
 
 ///////////////////// USERS //////////////////////
-
 // Get all users
 ###
 GET {{Host}}/api/users/
@@ -18,8 +16,8 @@ POST {{Host}}/api/users/register
 content-type: application/json
 
 {
-    "username": "cfg",
-    "password": "cfg"
+    "username": "lkjasd",
+    "password": "00000"
 }
 
 // Login user
@@ -28,8 +26,8 @@ POST {{Host}}/api/users/login
 content-type: application/json
 
 {
-    "username": "cfg",
-    "password": "cfg"
+    "username": "lkjasd",
+    "password": "00000"
 }
 
 ### Perfil
@@ -38,42 +36,61 @@ Authorization: {{token}}
 
 
 ///////////////////// EVENTS //////////////////////
-
 // Get all events
 ###
 GET {{Host}}/api/events/
 
 // Get event by id
 ###
-GET {{Host}}/api/events/34
+GET {{Host}}/api/events/33
 
 // Post event
 ###
-POST {{Host}}/api/events/   
+POST {{Host}}/api/events/
 Authorization: {{token}}
 content-type: application/json
 
 {
-    "nombre": "Partido de Fútbol",
-    "descripcion": "Partido amistoso de fútbol 7",
-    "fecha": "2024-03-15", 
-    "ubicacion": "Barcelona",
-    "tipoDeporte": "Fútbol",
-    "organizador": "Organizador123"
+    "nombre": "Cosas",
+    "descripcion": "Cosas de cosas.",
+    "fecha": "2026-05-01",
+    "ubicacion": "Satanderº",
+    "tipoDeporte": "Cosas",
+    "organizador": "organizador113"
 }
 
 // Update event
 ###
-PUT {{Host}}/api/events/52
-Authorization: {{token}}    
+PUT {{Host}}/api/events/57
+Authorization: {{token}}
 content-type: application/json
 
 {
-    "nombre": "Sasdasd",
-    "descripcion": "Tornasdads nivel",
+    "nombre": "Carrera",
+    "descripcion": "Carrera de montaña.",
+    "fecha": "2025-05-01",
+    "ubicacion": "Bilbao",
+    "tipoDeporte": "Senderismo",
+    "organizador": "organizador33"
 }
 
 // Delete event
 ###
-DELETE {{Host}}/api/events/3
-Authorization: {{token}}    
+DELETE {{Host}}/api/events/57
+Authorization: {{token}}
+
+
+
+///////// CONSULTAS AVANZADAS //////////
+
+// Get upcoming events
+###
+GET {{Host}}/api/events/upcoming
+
+// Get events by type
+###
+GET {{Host}}/api/events/type?type=senderismo
+
+// Get events by date
+###
+GET {{Host}}/api/events/date?from=2023-09-10&to=2023-09-20

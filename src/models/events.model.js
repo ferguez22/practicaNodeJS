@@ -1,8 +1,6 @@
-// EN los model van las funciones que interactuan con la base de datos y son llamadas por los controlers
-
 const pool = require("../config/DB");
 
-//  Select all users
+//  Select all events
 const selectAllEvents = async () => {
     const result = await pool.query("SELECT * FROM events");
     if (result.length === 0) return null;
@@ -16,6 +14,7 @@ const selectEventById = async (eventId) => {
     return result[0];
 }
 
+//  Insert event
 const insertEvent = async ({ nombre, descripcion, fecha, ubicacion, tipoDeporte, organizador }) => {
     const [result] = await pool.query(
         'INSERT INTO events (nombre, descripcion, fecha, ubicacion, tipoDeporte, organizador) VALUES (?, ?, ?, ?, ?, ?)',
@@ -27,11 +26,38 @@ const insertEvent = async ({ nombre, descripcion, fecha, ubicacion, tipoDeporte,
     return result.insertId;
 }
 
+//  Update event by id
 const updateEventById = async ({ id, nombre, descripcion, fecha, ubicacion, tipoDeporte, organizador }) => {
     const [result] = await pool.query(
-        'UPDATE events SET nombre = ?, descripcion = ?, fecha = ?, ubicacion = ?, tipoDeporte = ?, organizador = ? WHERE id = ?',
+        'UPDATE events SET nombre=?, descripcion=?, fecha=?, ubicacion=?, tipoDeporte=?, organizador=? WHERE id=?',
         [nombre, descripcion, fecha, ubicacion, tipoDeporte, organizador, id]
     );
+    return result;
+}
+
+//  Delete event by id
+const deleteEventById = async (eventId) => {
+    const [result] = await pool.query('DELETE FROM events WHERE id = ?', [eventId]);
+    return result;
+}
+
+//////// Consulta Avanzada de Eventos ////////
+
+//  Select upcoming events
+const selectUpcomingEvents = async () => {
+    const [result] = await pool.query('SELECT * FROM events WHERE fecha >= CURDATE() ORDER BY fecha ASC');
+    return result;
+}
+
+//  Select events by type
+const selectEventsByType = async (type) => {
+    const [result] = await pool.query('SELECT * FROM events WHERE tipoDeporte = ?', [type]);
+    return result;
+}
+
+//  Select events by date
+const selectEventsByDate = async (from, to) => {
+    const [result] = await pool.query('SELECT * FROM events WHERE fecha BETWEEN ? AND ?', [from, to]);
     return result;
 }
 
@@ -39,5 +65,9 @@ module.exports = {
     selectAllEvents,
     selectEventById,
     insertEvent,
-    updateEventById
+    updateEventById,
+    deleteEventById,
+    selectUpcomingEvents,
+    selectEventsByType,
+    selectEventsByDate
 }   
